@@ -1,0 +1,21 @@
+%hours-label, .hours-label {
+    font-family: 'Caponi';
+    font-size: 14px;
+    line-height: 19px;
+    color: c();
+}
+%reservation-label, .reservation-label {
+    @extend %hours-label;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+%reservation-label-inactive, .reservation-label-inactive {
+    @extend %reservation-label;
+    color: c(gray);
+}
+
+%menu-label, .menu-label {
+    @extend %hours-label;
+    line-height: 22px;
+}

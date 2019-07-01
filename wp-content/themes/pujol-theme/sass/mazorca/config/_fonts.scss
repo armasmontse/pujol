@@ -1,0 +1,28 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+	@include declara-font-face(Akkurat, '../fonts/AkkuratPro-Regular', normal);
+
+	@include declara-font-face(Caponi, '../fonts/CaponiText-Medium', 500);
+	@include declara-font-face(Caponi, '../fonts/CaponiText', normal);
+
+	@include declara-font-face(Minion, '../fonts/MinionPro-Regular', normal);
+
+	@include declara-font-face(Styrene, '../fonts/StyreneB-Medium', 500);
+	@include declara-font-face(Styrene, '../fonts/StyreneB-Regular', normal);
+///
+$fonts:(
+	akkurat:('Akkurat', sans-serif),
+	caponi:	('Caponi', serif),
+	minion:	('Minion', serif),
+	styrene:('Styrene', sans-serif),
+);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

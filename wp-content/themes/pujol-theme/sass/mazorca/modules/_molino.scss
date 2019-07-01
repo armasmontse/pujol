@@ -1,0 +1,246 @@
+.molino {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+          padding: 0 0px 0 99px !important;
+          max-width: 1440px;
+          @include between(menu, lg) {
+               justify-content: center !important;
+               padding: 0 0px 0 0px !important;
+          }
+          @include between(sm, menu) {
+               padding: 0 66px !important;
+          }
+          @include under(menu) {
+               justify-content: center;
+          }
+          @include under(sm) {
+               padding: 0 33px !important;
+          }
+          @include under(xs) {
+               padding: 0 20px !important;
+          }
+        &--width {
+               width: 100%;
+               padding: 0px !important;
+
+               @include under(sm) {
+                    padding: initial !important;
+               }
+        }
+        &--baseline {
+            align-items: flex-start;
+        }
+    }
+    &__col{
+        &--img {
+            width: 100%;
+            max-width: 460px;
+            margin-left: auto;
+            height: 616px;
+            margin-right: 100px;
+            object-fit: cover;
+            margin-top: 66px;
+            @include between(menu, lg) {
+              margin-right: auto;
+            }
+            @include under(menu) {
+                margin-right: auto;
+            }
+        }
+        &--small {
+               // width: 43%;
+               width: 100%;
+               max-width: 360px;
+            @include under(sm) {
+                width: 100%;
+            }
+        }
+        &--big {
+            // width: 57%;
+                width: 49%;
+               @include under(middle) {
+                    width: 40%;
+                    max-width: 57%;
+               }
+            @include under(sm) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__description {
+        &-img {
+            width: 100%;
+            max-width: 374px;
+            margin-right: auto;
+            height: 363px;
+            object-fit: cover;
+            @include under(sm) {
+               margin-left: auto;
+           }
+        }
+        &-title {
+            font-family: 'styrene';
+            font-size: 16px;
+            line-height: 22px;
+            width: 100%;
+            max-width: 315px;
+            margin-bottom: 20px;
+        }
+        font-family: 'caponi';
+        font-size: 16px;
+        line-height: 22px;
+        width: 100%;
+        max-width: 315px;
+        margin-bottom: 40px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        b,strong {
+            font-weight: bold;
+        }
+        em,i {
+            font-style: italic;
+        }
+        u {
+            text-decoration: underline;
+        }
+    }
+    &__hours {
+        @extend .molino__description-title;
+        width: 100%;
+        max-width: 244px;
+        margin-right: auto;
+        margin-top: 66px;
+        @include under(menu) {
+          margin-left: auto;
+          text-align: center;
+        }
+        &:first-child {
+             font-weight: 500;
+        }
+        &-img {
+            width: 100%;
+            max-width: 439px;
+            margin-left: auto;
+            height: 544px;
+            object-fit: cover;
+            @include under(menu) {
+               margin-right: auto;
+               margin-top: 30px;
+            }
+        }
+        a {
+          padding-bottom: 3px;
+          border-bottom: 1px solid #000;
+        }
+    }
+    &__addres {
+        @extend .molino__description-title;
+        font-family: 'Caponi';
+        width: 100%;
+        max-width: 244px;
+        margin-right: auto;
+        margin-top: 66px;
+        @include under(menu) {
+             margin-left: auto;
+             text-align: center;
+        }
+        a {
+          padding-bottom: 3px;
+          border-bottom: 1px solid #000;
+        }
+    }
+    &__contact {
+        width: 100%;
+        margin-top: 10px;
+        @include under(menu) {
+             text-align: center;
+        }
+        &-title {
+            font-family: 'caponi';
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-link {
+            font-family: 'caponi';
+            font-size: 14px;
+            line-height: 21px;
+            font-style: italic;
+            margin-bottom: 36px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    }
+    &__map {
+        width: 100%;
+        max-width: 498px;
+        height: 498px;
+        object-fit: contain;
+        margin-left: auto;
+        @include under(lg) {
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+
+    }
+
+     &__text {
+          strong {
+               font-family: f(styrene);
+               font-weight: 500;
+               padding-bottom: 25px;
+               display: flex;
+
+          }
+          padding: 0 15px;
+          // @include between(sm, menu) {
+          //      padding-left: 10px;
+          // }
+          @include under(sm) {
+               text-align: center;
+          }
+          p {
+               @include under(sm) {
+                    display: flex;
+                    text-align: center;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+               }
+          }
+     }
+
+     &__content-title {
+         margin-top: 200px;
+          padding: 0 0px 0 99px !important;
+          @include between(menu, lg) {
+               padding: 0 0px 0 66px !important;
+          }
+          @include between(sm,menu) {
+               padding: 0 66px !important;
+          }
+          @include under(sm) {
+               padding: 0 33px !important;
+               margin-top: 100px;
+          }
+          @include under(xs) {
+               padding: 0 20px !important;
+          }
+     }
+     &__title {
+          font-family: f(styrene);
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 30px;
+          margin-bottom: 60px;
+          text-transform: uppercase;
+          @include under(sm) {
+               text-align: center;
+          }
+     }
+}

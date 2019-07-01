@@ -1,0 +1,95 @@
+.menu {
+  $title-number-col-width: 43px;
+
+    &__col{
+        width: 100%;
+    }
+    &__contain-image {
+         position: relative;
+         width: 100% ;
+         max-width: 505px;
+         padding-top: 45%;
+         overflow: hidden;
+         @include between(sm, md) {
+              padding-top: 73%;
+         }
+        &--img {
+               // width: 100%;
+               // max-width: 505px;
+               // height: 294px;
+               // object-fit: cover;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               width: 100%;
+               height: auto;
+               -webkit-user-select: none;
+               -moz-user-select: none;
+               -ms-user-select: none;
+               user-select: none;
+
+        }
+
+    }
+    &__image {
+         &--odd {
+            margin-right: auto;
+        }
+        &--even {
+            margin-left: auto;
+            margin-top: 28px;
+            margin-bottom: 28px;
+        }
+    }
+    &__title {
+        @extend %section-title;
+        padding-top: 54px;
+        width: 100%;
+        &--span{
+            font-family: 'Caponi';
+            font-size: 14px;
+            font-style: normal;;
+            font-weight: normal;
+            text-transform: uppercase;
+            @include under(sm) {
+                text-align: center;
+                padding-left: $title-number-col-width;
+            }
+        }
+
+        &--separations {
+             margin: 0 0 22px 0;
+            letter-spacing: 0;
+            padding-top: 0;
+            display: grid;
+            grid-template-columns: 1fr $title-number-col-width;
+            align-items: baseline;
+            @include under(sm) {
+                margin-top: 32px;
+            }
+        }
+    }
+    &__foods {
+        @extend %menu-label;
+        width: 100%;
+        max-width: 400px;
+        @include under(sm) {
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+    }
+    &__images-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        align-items: baseline;
+        align-items: flex-start;
+        display: flex;
+        @include under(sm) {
+            align-items: center;
+        }
+    }
+}

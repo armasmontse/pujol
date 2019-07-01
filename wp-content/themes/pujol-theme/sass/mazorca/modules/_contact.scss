@@ -1,0 +1,188 @@
+.contact {
+    // padding-bottom: 256px;
+     height: 100vh;
+     height: 100%;
+     min-height: 100vh;
+     align-items: center;
+    @include under(menu) {
+        // padding-bottom: 100px;
+        height: auto;
+    }
+    @include under(xs) {
+        padding-bottom: 60px;
+    }
+    &__title {
+        @extend %section-title;
+    }
+    &__address {
+        padding-top: 60px;
+    }
+    &__info {
+        max-width: 190px;
+        margin-right: auto;
+        @include under(sm) {
+            margin-left: auto;
+        }
+    }
+    &__phones {
+        padding-top: 43px;
+        padding-bottom: 32px;
+    }
+    &__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        justify-content: space-between;
+        align-items: start;
+        @include under(sm) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+    }
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        max-width: 340px;
+        margin-left: auto;
+    }
+    &__col-1-2{
+        &:first-of-type {
+            width: 156px;
+            @include under(md) {
+                width: 100%;
+            }
+        }
+        &:last-of-type {
+            width: calc(100% - 156px - 20px);
+            @include under(lg) {
+                width: calc(100% - 156px - 40px);
+            }
+            @include under(md) {
+                display: none;
+            }
+        }
+    }
+    &__google-map {
+        @extend %reservation-label;
+        width: 80px;
+        border-bottom: 1px solid c();
+        @include under(sm) {
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+    &__map {
+        width: 100%;
+        position: relative;
+        padding-bottom: 62.6%;
+        &--image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            object-fit: cover;
+        }
+        &-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 100%;
+            min-height: 510px;
+            // @include under(menu) {
+            //      min-height: auto;
+            // }
+            @include under(middle-1250) {
+                min-height: 490px;
+            }
+
+            @include under(middle) {
+                min-height: 470px;
+            }
+
+            @include under(menu) {
+                min-height: 433px;
+            }
+
+            @include under(md) {
+                min-height: 380px;
+            }
+            @include under(sm) {
+                justify-content: center;
+                align-items: center;
+            }
+            @include under(sm) {
+                min-height: auto;
+            }
+            @media (min-height: 1250px) {
+                min-height: 433px;
+            }
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 29px;
+        @include under(sm) {
+            flex-direction: row;
+            align-items: center;
+            padding: 30px 0px;
+        }
+        @include under(xs) {
+            padding: 30px 0px 0px 0px;
+        }
+    }
+    &__link {
+        font-family: 'caponi';
+        font-size: 11px;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+
+    &__notice {
+        max-width: 390px;
+        @include under(middle) {
+            max-width: 360px;
+        }
+
+        @include under(sm-980) {
+            max-width: 280px;
+        }
+
+        @include under(sm) {
+            margin-top: 50px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        &--title {
+            font-family: f(styrene);
+            font-size: 13px;
+            line-height: 22px;
+        }
+
+        &--text {
+            font-family: f(caponi);
+            font-size: 13px;
+            line-height:16px;
+        }
+    }
+}
+
+.reservation-label{
+    &.border {
+        border: 1px solid c(base);
+        padding: 3px 10px;
+    }
+}

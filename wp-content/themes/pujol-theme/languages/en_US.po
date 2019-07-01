@@ -1,0 +1,361 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pujol theme\n"
+"POT-Creation-Date: 2018-09-17 10:43-0500\n"
+"PO-Revision-Date: 2018-09-17 10:43-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: ajax/CltvoAjaxMail.php:110
+msgid "Error en envío."
+msgstr "Send error"
+
+#: ajax/CltvoAjaxMail.php:135
+msgid "Correo incorrecto"
+msgstr "Wrong email"
+
+#: ajax/CltvoAjaxMail.php:144
+msgid "- No hubo mensaje escrito -"
+msgstr "There were write email"
+
+#: ajax/CltvoAjaxMail.php:162
+msgid "Gracias por tu mensaje. Nos comunicaremos contigo pronto."
+msgstr "Thank you for your message. Soon we will communicate with you"
+
+#: ajax/CltvoAjaxMail.php:177
+msgid "Error en el envío"
+msgstr "Error while sending"
+
+#: ajax/CltvoAjaxMail.php:182
+msgid "¡Gracias!"
+msgstr "Thanks!"
+
+#: functions/admin/metaboxes/Cltvo_About.php:58
+#: functions/admin/metaboxes/Cltvo_Molino.php:82
+msgid "Imagen superior "
+msgstr "Top Image"
+
+#: functions/admin/metaboxes/Cltvo_About.php:59
+msgid "imagen superior "
+msgstr "Top Image"
+
+#: functions/admin/metaboxes/Cltvo_About.php:62
+msgid "Imagen inferior "
+msgstr "Bottom image"
+
+#: functions/admin/metaboxes/Cltvo_About.php:63
+msgid "imagen inferior "
+msgstr "bottom image"
+
+#: functions/admin/metaboxes/Cltvo_About.php:66
+#: functions/admin/metaboxes/Cltvo_Molino.php:78
+msgid "Contenido"
+msgstr "Content"
+
+#: functions/admin/metaboxes/Cltvo_About.php:72
+msgid "Imagen derecha "
+msgstr "Right Image"
+
+#: functions/admin/metaboxes/Cltvo_About.php:73
+#: functions/admin/metaboxes/Cltvo_Molino.php:75
+#: functions/admin/metaboxes/Cltvo_Molino.php:90
+#: functions/admin/metaboxes/Cltvo_Molino.php:105
+msgid "imagen derecha "
+msgstr "Right Image"
+
+#: functions/admin/metaboxes/Cltvo_Breaks.php:56
+msgid "Descanso "
+msgstr "Break"
+
+#: functions/admin/metaboxes/Cltvo_Breaks.php:57
+msgid "descanso "
+msgstr "Break"
+
+#: functions/admin/metaboxes/Cltvo_Menu.php:75
+msgid "Photografías "
+msgstr "Photographies"
+
+#: functions/admin/metaboxes/Cltvo_Menu.php:79
+msgid "Menú "
+msgstr "Menu"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:74
+#, fuzzy
+#| msgid "Imagen superior "
+msgid "Imagen superior izquierda"
+msgstr "Top Image"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:83
+#, fuzzy
+#| msgid "imagen derecha "
+msgid "imagen izquierda "
+msgstr "Right Image"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:89
+#, fuzzy
+#| msgid "Imagen inferior "
+msgid "Imagen inferior izquierda "
+msgstr "Bottom image"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:93
+msgid "Horarios"
+msgstr "Timetable"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:104
+#, fuzzy
+#| msgid "Imagen inferior "
+msgid "Imagen inferior derecha "
+msgstr "Bottom image"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:108
+#: functions/admin/metaboxes/Cltvo_Molino.php:127
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:117
+msgid "Dirección"
+msgstr "Address"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:110
+msgid "Nombre del link"
+msgstr "Link name"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:118
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:190
+msgid "Link"
+msgstr "Link"
+
+#: functions/admin/metaboxes/Cltvo_Molino.php:142
+#, fuzzy
+#| msgid "Contacto"
+msgid "Contacto "
+msgstr "Contact"
+
+#: functions/admin/metaboxes/Cltvo_Reservations.php:66
+msgid "Pujol "
+msgstr "Pujol\t"
+
+#: functions/admin/metaboxes/Cltvo_Reservations.php:67
+msgid "pujol "
+msgstr "pujol"
+
+#: functions/admin/metaboxes/Cltvo_Reservations.php:70
+msgid "Omakase "
+msgstr "Omakase"
+
+#: functions/admin/metaboxes/Cltvo_Reservations.php:71
+msgid "omakase "
+msgstr "omakase"
+
+#: functions/admin/metaboxes/Cltvo_Reservations.php:76
+#, fuzzy
+#| msgid "Contenido"
+msgid "Contenido Pujol"
+msgstr "Content"
+
+#: functions/admin/metaboxes/Cltvo_Reservations.php:80
+#, fuzzy
+#| msgid "Contenido"
+msgid "Contenido Omakase"
+msgstr "Content"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:101
+msgid "Teléfono 1"
+msgstr "Phone 1"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:109
+msgid "Teléfono 2"
+msgstr "Phone 2"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:135
+msgid "Google Map"
+msgstr "Google Map"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:143
+msgid "Imagen"
+msgstr "Image"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:144
+msgid "imagen"
+msgstr "image"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:147
+msgid "Mapa"
+msgstr "Map"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:148
+msgid "mapa"
+msgstr "map"
+
+#: functions/admin/metaboxes/Cltvo_SocialNet.php:181
+msgid "Nombre"
+msgstr "Name"
+
+#: functions/admin/metaboxes/traits/Cltvo_Featured_Image_Trait.php:46
+msgid "Clik en la imagen para cambiar "
+msgstr "Click on the image to change"
+
+#: functions/admin/metaboxes/traits/Cltvo_Featured_Image_Trait.php:60
+msgid "Agregar "
+msgstr "Add"
+
+#: functions/admin/metaboxes/traits/Cltvo_Featured_Image_Trait.php:63
+msgid "Remover "
+msgstr "Remove"
+
+#: functions/special_pages.php:142
+msgid "You cant delete this page."
+msgstr "You cant delete this page."
+
+#: inc/templates/contact.php:6
+msgid "contacto"
+msgstr "contact"
+
+#: inc/templates/contact.php:17 inc/templates/contact.php:21
+msgid "T."
+msgstr "T."
+
+#: inc/templates/contact.php:26
+msgid "Facturación"
+msgstr "Invoicing"
+
+#: inc/templates/contact.php:54
+msgid "Google map"
+msgstr "Google map"
+
+#: inc/templates/contact.php:58
+msgid "No contamos con Valet Parking. Estacionamiento en Lafontaine 119."
+msgstr "Parking in Lafontaine 119. We don’t have Valet Parking."
+
+#: inc/templates/contact.php:60
+msgid "AVISO IMPORTANTE SI VIENES EN UBER"
+msgstr "IMPORTANT NOTE IF YOU COME BY UBER"
+
+#: inc/templates/contact.php:61
+msgid ""
+"Te recomendamos introducir manualmente la dirección Tennyson 133, ya que "
+"aunque en tu pantalla la opción aparezca como Pujol, la aplicación que "
+"utilizan los conductores tiene un error de compatibilidad, y te puede enviar "
+"a nuestra antigua ubicación."
+msgstr ""
+"We recommend that you manually introduce the address Tennyson 133, because "
+"even if the correct location appears by selecting Pujol on your phone, there "
+"is a compatibility problem with the app used by drivers, that can take you "
+"to our old location."
+
+#: inc/templates/menu.php:15
+msgid "menú"
+msgstr "menu"
+
+#: inc/templates/nav-molino.php:3 inc/templates/nav.php:4
+#: inc/templates/nav.php:19 inc/templates/splash.php:8
+msgid "pujol"
+msgstr "pujol"
+
+#: inc/templates/nav-molino.php:10 inc/templates/nav.php:12
+msgid "Nosotros"
+msgstr "Us"
+
+#: inc/templates/nav-molino.php:11 inc/templates/nav.php:13
+msgid "Reservaciones"
+msgstr "Reservations"
+
+#: inc/templates/nav-molino.php:12 inc/templates/nav.php:14
+msgid "Menú"
+msgstr "Menu"
+
+#: inc/templates/nav-molino.php:13 inc/templates/nav.php:15
+msgid "Contacto"
+msgstr "Contact"
+
+#: inc/templates/reservations.php:3
+msgid "reservaciones"
+msgstr "Reservations"
+
+#: inc/templates/reservations.php:7
+msgid "Menú degustación"
+msgstr "Tasting menu"
+
+#: inc/templates/reservations.php:10
+msgid "Comida"
+msgstr "Lunch"
+
+#: inc/templates/reservations.php:13
+msgid "Cena"
+msgstr "Dinner"
+
+#: inc/templates/reservations.php:17 inc/templates/reservations.php:85
+msgid "Barra de Tacos"
+msgstr "Taco Bar"
+
+#: inc/templates/reservations.php:24
+msgid "Reservar"
+msgstr "Book"
+
+#: inc/templates/reservations.php:74
+msgid "Pujol"
+msgstr "Pujol"
+
+#. Theme Name of the plugin/theme
+msgid "Pujol theme"
+msgstr "Pujol theme"
+
+#. Description of the plugin/theme
+msgid "Configuración básica para cualquier tema desarrollado por El Cultivo"
+msgstr "Basic configuration for any theme developed by El Cultivo"
+
+#. Author of the plugin/theme
+msgid "El Cultivo"
+msgstr "El Cultivo"
+
+#. Author URI of the plugin/theme
+msgid "http://elcultivo.mx"
+msgstr "http://elcultivo.mx"
+
+#, fuzzy
+#~| msgid "Omakase "
+#~ msgid "Omakase"
+#~ msgstr "Omakase"
+
+#~ msgid "Omakase - Barra de tacos"
+#~ msgstr "Omakase - Tacos bar"
+
+#~ msgid "Page %s"
+#~ msgstr "Page %s"
+
+#, fuzzy
+#~| msgid "diario"
+#~ msgid "Diario"
+#~ msgstr "diary"
+
+#~ msgid "próximamente"
+#~ msgstr "coming soon"
+
+#~ msgid "Tienda"
+#~ msgstr "Shop"
+
+#~ msgid "Molino \"El pujol"
+#~ msgstr "Molino “El pujol"
+
+#~ msgid "Mesa"
+#~ msgstr "Table"
+
+#~ msgid "No. de personas"
+#~ msgstr "No. of persons"
+
+#~ msgid "Fecha/hora"
+#~ msgstr "Date/time"
+
+#~ msgid "Fecha recomendada - <span>Fecha/hora</span>"
+#~ msgstr "Recommended date - <span>Date / time</span>"

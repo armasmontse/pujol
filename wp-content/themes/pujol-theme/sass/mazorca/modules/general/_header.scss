@@ -1,0 +1,359 @@
+.header {
+    $gutter: 99px;
+    &__img {
+        // height: calc(100vh - 78px);
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        //Choca con la funcion de logoScrroll en resize de la pantalla
+        // transition: height 999999s;
+    }
+    &__item {
+        &:hover {
+            .header__item--inactive {
+                display: none;
+            }
+            .header__item--coming-soon {
+                display: block;
+            }
+        }
+        &--coming-soon {
+            display: none;
+            @extend %menu-link;
+            cursor: auto;
+            color: c(blue);
+        }
+        &--inactive {
+            // color: c(gray);
+            cursor: auto;
+        }
+    }
+    &__molino {
+         @extend %menu-link;
+         @include under(1100px) {
+               width: 125px;
+         }
+    }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 393px;
+        @include under(1100px) {
+            max-width: 320px;
+        }
+        @include under(menu) {
+            flex-direction: column;
+        }
+    }
+    &__container {
+        height: 78px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 $gutter;
+        max-width: $container-max-width;
+        margin: 0 auto;
+        @include under(lg) {
+			padding: 0 66px;
+		}
+		@include under(menu) {
+			padding: 0 33px;
+            flex-direction: column;
+            align-items: baseline;
+		}
+		@include under(xs) {
+			padding: 0 20px;
+		}
+        &--hover {
+            &:hover {
+               background-color: rgba(219, 216, 196, 0.85);
+               transition: all 0.5s;
+            }
+            @include under(menu) {
+                &:hover {
+                    .header__mobile {
+                        background-color: rgba(219, 216, 196, 0.85);
+                    }
+                }
+            }
+        }
+    }
+    &__mobile {
+        &-container {
+            @include under(menu) {
+                height: auto;
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+            }
+        }
+        @include over(menu){
+             display: flex !important;
+        }
+        @include under(menu) {
+
+            top: 75px;
+            left: auto;
+            right: auto;
+            width: 100%;
+            max-width: 100%;
+            z-index: 2;
+            position: absolute;
+            flex-wrap: wrap;
+            height: auto;
+            padding: 0 93px;
+            display: none;
+
+            background-color: rgba(219, 216, 196, 0.85);
+
+            &:hover {
+                background-color: rgba(219, 216, 196, 0.85);
+            }
+        }
+
+        @include under(sm) {
+            top: 65px;
+       }
+       @include under(xs) {
+          top: 60px;
+     }
+
+        &--btn {
+            @extend %button;
+            display: none;
+            cursor: pointer;
+            z-index: 2;
+            max-width: 56px;
+            margin-left: 33px;
+            align-self: center;
+            border: 0px !important;
+            padding:0 !important;
+            font-size: 22px;
+            line-height: 22px;
+            color: c(beige);
+
+            @include under(menu) {
+                display: block;
+            }
+
+            @include under(xs) {
+    			margin-left: 20px;
+                margin-top: 5px;
+    		}
+        }
+          &--item {
+               @include under(menu) {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+               }
+
+          }
+    }
+    &__title {
+        @extend %title;
+        position: fixed;
+        top: 35vh;
+        left: 25vw;
+        right: 25vw;
+        text-align: center;
+        @include under(small) {
+            left: 8vh;
+            right: 8vh;
+        }
+        @include under(xs) {
+            font-size: 60px;
+        }
+        &--small {
+            @extend %title;
+            font-size: 52px;
+            position: absolute;
+            top: 15px;
+            left: 25vw;
+            right: 25vw;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            @include under(599px) {
+                left: 16.7vw;
+            }
+            @include under(xs) {
+                font-size: 25px;
+                // left: 12vw;
+               // left: 10vw;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+            }
+            &-responsive {
+                display: none;
+                @include under(menu) {
+                    // display: block;
+                    top: 8px;
+                }
+                @include under(xs) {
+                    // top: 18px;
+                    top: 32px;
+
+                }
+            }
+            &-no-responsive {
+                display: none;
+                @include under(menu) {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    &__languages {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          // width: 155px;
+          width: 100%;
+          max-width: 400px;
+          @include between(menu, 1100px) {
+               justify-content: flex-end;
+               margin-top: 10px;
+               width: 100%;
+               max-width: 346px;
+          }
+          @include under(menu) {
+               flex-direction: column;
+          }
+          @include under(110px) {
+               flex-direction: column;
+          }
+        &-links {
+            @include under(menu) {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            @include between(menu, 1100px) {
+                 margin-top: 10px;
+            }
+        }
+        &-link {
+             @include between(menu, 1100px) {
+                  margin-top: 10px;
+             }
+        }
+    }
+    &__comming-soon {
+          width: 99px;
+          text-align: center;
+          @include under(menu) {
+               margin-top: 10px;
+               margin-bottom: 10px;
+          }
+          @include under(1100px) {
+               text-align: left;
+          }
+    }
+    &--padding {
+        padding: 0px 0px 10px 0px !important;
+        @include under(menu) {
+            padding: 20px 0px !important;
+        }
+        @include under(sm) {
+            padding: 15px 0px !important;
+        }
+        @include under(xs) {
+            padding: 10px 0px !important;
+        }
+    }
+
+    &__molino-logo img {
+         width: 173px;
+         height: auto;
+         @include under(menu) {
+              display: none;
+         }
+    }
+}
+.active {
+     border-bottom: 1px solid #000;
+     @include under(menu) {
+          border: 0;
+          text-decoration: underline;
+     }
+}
+
+.none {
+    display: none !important;
+    @include under(menu) {
+         display: block !important;
+    }
+}
+
+.qts_lang_item{
+    @extend %menu-link;
+    margin: 0px;
+    display: inline;
+    // &::after{
+    //     content: " | "
+    // }
+    // &.last-child{
+    //     &::after{
+    //         content: ""
+    //     }
+    // }
+
+    &.current-menu-item {
+         border-bottom: 1px solid #000;
+    }
+    &.last-child {
+         margin-left: 5px;
+    }
+}
+.qts_type_text {
+    @include under(menu) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    @include under(1100px) {
+        margin-bottom: 30px;
+    }
+}
+
+
+#header-fixed_JS {
+     &.fixed {
+          position: fixed;
+          top: 0;
+          z-index: 99999;
+          width:100%;
+
+     }
+}
+
+#us {
+     &.paddingTop {
+          // padding-top: 14.6%;
+          padding-top: calc(10% + 88px);
+          @include under(menu) {
+               // padding-top: 25%;
+               padding-top: calc(10% + 75px);
+          }
+
+          @include under(sm) {
+               // padding-top: 25%;
+               padding-top: calc(10% + 65px);
+          }
+
+          @include under(xs) {
+               // padding-top: 25%;
+               padding-top: calc(10% + 60px);
+          }
+     }
+}
+
+// #height_JS .header__img {
+//      height: calc(100vh - 78px);
+// }

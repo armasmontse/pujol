@@ -1,0 +1,191 @@
+.reservations {
+    // &__select {
+    //     position:relative;
+    //     &:after {
+    //         content:'<>';
+    //         font:11px "Consolas", monospace;
+    //         color:#aaa;
+    //         -webkit-transform:rotate(90deg);
+    //         -moz-transform:rotate(90deg);
+    //         -ms-transform:rotate(90deg);
+    //         transform:rotate(90deg);
+    //         right:8px; top:2px;
+    //         padding:0 0 2px;
+    //         border-bottom:1px solid #ddd;
+    //         position:absolute;
+    //         pointer-events:none;
+    //     }
+    //     &:before {
+    //         content:'';
+    //         right:6px; top:0px;
+    //         width:20px; height:20px;
+    //         background:#f8f8f8;
+    //         position:absolute;
+    //         pointer-events:none;
+    //         display:block;
+    //     }
+    //     &--size {
+    //         width: 155px;
+    //     }
+    // }
+    &__restaurants {
+          &-name {
+              @extend %hours-label;
+               margin-bottom: 20px;
+              color: #737373;
+              margin-top: 5px;
+             @include under(small) {
+                 text-align: center;
+             }
+          }
+          &--content {
+               font-family: f(caponi);
+               font-size: 14px;
+               line-height: 18px;
+               color: c();
+               p {
+                    strong {
+                         font-weight: bold;
+                    }
+               }
+          }
+    }
+
+    &__title {
+          @extend %section-title;
+          padding-bottom: 55px;
+
+          // @include under(menu) {
+          //      text-align: center;
+          // }
+     }
+
+     &__button {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 25%;
+          margin-bottom: 30px;
+          @include under(md) {
+               margin-top: 15%;
+               margin-bottom: 15%;
+          }
+    }
+
+    &__images {
+          @include under(md) {
+               margin-top: 30px;
+          }
+          @include under(small) {
+               display: block;
+          }
+    }
+
+    &__image {
+        width: 100%;
+        height: 436px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    &__1-2 {
+         font-family: f(Caponi);
+         font-size: 14px;
+         line-height: 18px;
+         color: #000000;
+         @include under(xs) {
+               flex-direction: column;
+         }
+    }
+
+     &__form {
+          .form-group {
+               position: relative;
+               &::after {
+                    position: absolute;
+                    content: "v";
+                    top: 0;
+                    right: 0;
+               }
+          }
+     }
+     &__menu {
+          width: 100%;
+          max-width: 40%;
+          height: auto;
+          padding: 0px 20px 0 0;
+          font-family: f(caponi);
+          @include under(menu) {
+               max-width: 50%;
+          }
+          @include under(xs) {
+               max-width: 100%;
+               padding: 0 20px;
+          }
+          &-degustacion {
+               font-family: f(caponi);
+               padding-bottom: 10px;
+          }
+
+          &-carta {
+               font-family: f(caponi);
+          }
+     }
+
+     &__mesa {
+          height: auto;
+          width: 100%;
+          max-width: 80%;
+          padding: 0px 0 0 20px;
+          color: #000000;
+          @include under(menu) {
+               max-width: 50%;
+          }
+          @include under(xs) {
+               max-width: 100%;
+               padding: 20px 20px;
+          }
+          &-sucursal {
+               display: flex;
+               flex-direction: row;
+               margin-bottom: 30px;
+          }
+
+          &--title {
+               position: relative;
+               padding: 0 20px 0 0;
+               font-size: 16px;
+               line-height: 18px;
+
+               &:after {
+                    position: absolute;
+                    content: " | ";
+                    top: 0;
+                    right: 0px;
+               }
+          }
+
+          &--restaurant {
+               padding: 0 0px 0 25px;
+               font-family: f(Caponi);
+               font-size: 16px;
+               line-height: 18px;
+               color: #000000;
+
+          }
+
+          &--date {
+               font-size: 16px;
+          }
+
+          p span {
+               font-family: f(styrene);
+               font-size: 14px;
+               line-height: 22px;
+               color: #6e6e6e;
+          }
+     }
+}
